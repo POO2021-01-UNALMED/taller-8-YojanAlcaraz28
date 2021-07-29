@@ -32,7 +32,7 @@ public class Jugador extends Futbolista {
 		this.dorsal = dorsal;
 	}
 	
-	public int comapreTo(Futbolista f) {
+	public int compareTo(Futbolista f) {
 		return this.getEdad() - f.getEdad();
 	}
 	

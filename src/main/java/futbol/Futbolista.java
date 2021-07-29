@@ -6,7 +6,7 @@ public class Futbolista implements Comparable<Object>{
 	private final String posicion;
 	
 	public Futbolista() {
-		this("Maradona", 30, "Delantero");
+		this("Maradona", 30, "delantero");
 	}
 	
 	public Futbolista(String nombre, int edad, String posicion) {
@@ -48,9 +48,9 @@ public class Futbolista implements Comparable<Object>{
 	}
 	
 	public boolean equals(Futbolista f) {
-		if(this.nombre == f.getNombre()) {
+		if(this.nombre.equals(f.getNombre())) {
 			if(this.edad == f.getEdad()) {
-				if(this.posicion == f.getPosicion()) {
+				if(this.posicion.equals(f.getPosicion())) {
 					return true;
 				}else {
 					return false;
